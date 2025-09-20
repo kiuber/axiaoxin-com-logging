@@ -98,7 +98,7 @@ type GinLogDetails struct {
 	// 请求处理耗时 (秒)
 	Latency float64 `json:"latency_seconds"`
 	// Context 中的 Keys
-	ContextKeys map[string]interface{} `json:"context_keys,omitempty"`
+	ContextKeys map[any]any `json:"context_keys,omitempty"`
 	// http request header
 	RequestHeader http.Header `json:"request_header,omitempty"`
 	// http Request Form
